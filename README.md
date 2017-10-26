@@ -1,14 +1,21 @@
-# Patch for using with RosKinetic and UbuntuXenial
+# Patch for running in RosKinetic and UbuntuXenial
 * compile error:
   * error msg:
   ```
   error: ‘shared_ptr’ in namespace ‘std’ does not name a template type
   ```
-  * solution: add the following in all CMakeLists.txt files under `kinova_moveit`
+  * solution: add the following in all CMakeLists.txt files under `kinova_moveit`,
+  see also [this](https://github.com/Kinovarobotics/kinova-ros/issues/102)
   ```
   ## Compile as C++11, supported in ROS Kinetic and newer
   add_compile_options(-std=c++11)
   ```
+* running time error when launching simulation gazebo7.x
+  * error msg:
+  ```
+  Error [Param.cc:452] Unable to set value [-nan -nan -nan] for key[size]
+  ```
+  * solution: [here](https://github.com/Kinovarobotics/kinova-ros/issues/103)
 
 # Table of Contents
 - [Important](#important)

@@ -23,7 +23,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <box size = "0 0 0"/>
+        <box size = "0.00001 0.00001 0.00001"/>
       </geometry>
     <!--<material name="Black" /> -->
     </visual>
@@ -31,19 +31,19 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <box size = "0 0 0"/> 
+        <box size = "0.00001 0.00001 0.00001"/>
       </geometry>
-    </collision>     
+    </collision>
   </link>
 
   <!-- for gazebo -->
   <link name="world"/>
-  
+
   <joint name="connect_root_and_world" type="fixed">
     <child link="root" />
     <parent link="world" />
-    <origin xyz="0 0 0" rpy="0 0 0" />    
-  </joint> 
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </joint>
 
   <property name="robot_root" value="root" />
 
