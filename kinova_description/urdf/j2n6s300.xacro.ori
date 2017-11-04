@@ -101,7 +101,7 @@
     <property name="joint_end_effector" value="end_effector_offset" />
     <property name="joint_end_effector_type" value="fixed" />
     <property name="joint_end_effector_axis_xyz" value="0 0 0" />
-    <property name="joint_end_effector_origin_xyz" value="0 0 -0.1300" />
+    <property name="joint_end_effector_origin_xyz" value="0 0 -0.1600" />
     <property name="joint_end_effector_origin_rpy" value="${J_PI} 0 0" />
 
 
